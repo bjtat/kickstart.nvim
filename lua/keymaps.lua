@@ -118,6 +118,7 @@ vim.keymap.set('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by 
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
 
+vim.keymap.set('n', '<leader>sk', require('telescope.builtin').keymaps, { desc = '[S]earch [K]eymaps' })
 vim.keymap.set('n', '<leader><leader>', require('telescope.builtin').git_files, { desc = 'Search [G]it [F]iles' })
 vim.keymap.set('n', '<leader>?', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by [G]rep on Git Root', silent = true })
 
@@ -135,4 +136,4 @@ vim.keymap.set("n", "<leader>]", "<cmd>:GoDef<cr>", { desc = "GPV vim-go GoDef" 
 vim.keymap.set("n", "<leader>[", "<cmd>:GoDefPop<cr>", { desc = "GPV vim-go GoDefPop" })
 vim.keymap.set("n", "<leader>gr", "<cmd>GoRename<cr>", { desc = "GPV vim-go rename" })
 vim.keymap.set("n", "<leader>gt", "<cmd>GoAlt<cr>", { desc = "GPV vim-go goto test" })
-vim.keymap.set("n", "<leader>gw", "<cmd>Telescope grep_string<cr>", { desc = "GPV grep current string" })
+-- vim.keymap.set("n", "<leader>gw", "<cmd>Telescope grep_string<cr>", { desc = "GPV grep current string" })
