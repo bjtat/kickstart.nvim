@@ -123,3 +123,16 @@ vim.keymap.set('n', '<leader>?', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by [
 
 -- Neotree keymaps
 vim.keymap.set('n', '\\', '<cmd>Neotree toggle<cr>')
+
+-- oscyank keymaps
+vim.keymap.set("n", "<leader>c", require("osc52").copy_operator, { expr = true, desc = "GPV oscyank operator" })
+vim.keymap.set("v", "<leader>c", require("osc52").copy_visual, { desc = "GPV oscyank visual" })
+
+-- vim-go keymaps
+vim.keymap.set("n", "<C-]>", "<cmd>:GoDef<cr>", { desc = "GPV vim-go GoDef" })
+vim.keymap.set("n", "<C-[>", "<cmd>:GoDefPop<cr>", { desc = "GPV vim-go GoDefPop" })
+vim.keymap.set("n", "<leader>]", "<cmd>:GoDef<cr>", { desc = "GPV vim-go GoDef" })
+vim.keymap.set("n", "<leader>[", "<cmd>:GoDefPop<cr>", { desc = "GPV vim-go GoDefPop" })
+vim.keymap.set("n", "<leader>gr", "<cmd>GoRename<cr>", { desc = "GPV vim-go rename" })
+vim.keymap.set("n", "<leader>gt", "<cmd>GoAlt<cr>", { desc = "GPV vim-go goto test" })
+vim.keymap.set("n", "<leader>gw", "<cmd>Telescope grep_string<cr>", { desc = "GPV grep current string" })

@@ -26,6 +26,10 @@ require('lazy').setup({
   -- use gc to comment
   { 'numToStr/Comment.nvim', opts = {} },
 
+  { "ojroques/nvim-osc52", },
+
+  { "fatih/vim-go", },
+
   {
     "nvim-neo-tree/neo-tree.nvim",
     version = "*",
