@@ -513,5 +513,5 @@ require('which-key').register {
   ['<leader>w'] = { name = '[W]orkspace', _ = 'which_key_ignore' },
 }
 
-require("keymaps")
-require("settings")
+require('keymaps')
+require('options')
