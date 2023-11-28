@@ -194,6 +194,7 @@ require('lazy').setup({
     'nvim-lualine/lualine.nvim',
     opts = {
       options = {
+        globalstatus = true,
         icons_enabled = false,
         theme = 'auto',
         component_separators = '|',

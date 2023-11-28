@@ -120,10 +120,12 @@ vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = 
 
 vim.keymap.set('n', '<leader>sk', require('telescope.builtin').keymaps, { desc = '[S]earch [K]eymaps' })
 vim.keymap.set('n', '<leader><leader>', require('telescope.builtin').git_files, { desc = 'Search [G]it [F]iles' })
+vim.keymap.set('n', '<C-P>', require('telescope.builtin').git_files, { desc = 'Search [G]it [F]iles' })
 vim.keymap.set('n', '<leader>?', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by [G]rep on Git Root', silent = true })
 
 -- Neotree keymaps
 vim.keymap.set('n', '\\', '<cmd>Neotree toggle<cr>')
+vim.keymap.set('n', '|', '<cmd>Neotree toggle reveal<cr>')
 
 -- oscyank keymaps
 vim.keymap.set("n", "<leader>c", require("osc52").copy_operator, { expr = true, desc = "GPV oscyank operator" })
