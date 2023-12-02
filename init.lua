@@ -289,7 +289,7 @@ vim.defer_fn(function()
       "gosum",
       "gowork",
       "make",
-      "ocaml",
+      -- "ocaml",
     },
 
     auto_install = true,
