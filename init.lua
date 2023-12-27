@@ -31,6 +31,12 @@ require('lazy').setup({
   { "fatih/vim-go", },
 
   {
+    "m4xshen/hardtime.nvim",
+    dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
+    opts = {}
+  },
+
+  {
     "nvim-neo-tree/neo-tree.nvim",
     version = "*",
     dependencies = {
